@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Aquagram</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="./assets/videos/sea.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Witness the true beauty of nature</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempora exercitationem illo unde nulla
+                perferendis incidunt consequatur, recusandae consectetur corrupti!</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="./assets/images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./assets/images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./assets/images/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script src="./assets/javascripts/toggleMenu.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#252e39"
+                },
+                "button": {
+                    "background": "#14a7d0"
+                }
+            },
+            "theme": "classic",
+            "content": {
+                "message": "This site uses cookies to improve your experience.",
+                "dismiss": "Got it!",
+                "link": "Learn more"
+            }
+        });
+    </script>
+</body>
+
+</html>
